@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class EmpleadoController extends Controller
+{
+  public function index ()
+  {
+      return view ('empleados.index');
+  }
+
+  public function get ($id)
+  {
+      return view ('empleados.empleado');
+  }
+}

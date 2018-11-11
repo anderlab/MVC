@@ -1,0 +1,3 @@
+<td><a href="{{route('empleado',$e->id)}}">{{$e->nombre." ".$e->apellido1}}</a></td>
+<td><a href="{{route('departamento',($e->departamento)->departamento_id)}}">{{($e->departamento)->nombre}}</a></td>
+<td><a href="{{route('proyecto',is_null($e->proyecto)?"":($e->proyecto)->id)}}">{{is_null($e->proyecto)?"":($e->proyecto)->titulo}}</a></td>
